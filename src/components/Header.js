@@ -163,7 +163,7 @@ const Header = ({isLogin, hideLogin}) => {
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                         <Navbar.Collapse id="responsive-navbar-nav">
                             <Nav className="ml-auto">
-                                <Nav.Link><Link to='/' className="navItem navHover"  >HOME</Link></Nav.Link>
+                                <Nav.Link><Link to='/' className="navItem">HOME</Link></Nav.Link>
                                 <Nav.Link href="#shop-wines" className="navItem">DISCOVER</Nav.Link>
                                 <Nav.Link href="#testimonial" className="navItem">TESTIMONIALS</Nav.Link>
                                 {!localStorage.getItem('UserId') &&
