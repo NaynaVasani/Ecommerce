@@ -31,6 +31,10 @@ const Header = ({isLogin, hideLogin}) => {
         setShow(true)
         setShow1(false)
     }
+    const logout = () => {
+        localStorage.removeItem('UserId');
+        window.location.reload();
+    }
 
     const handleClose = () => setShow(false);
 
@@ -162,8 +166,16 @@ const Header = ({isLogin, hideLogin}) => {
                                 <Nav.Link><Link to='/' className="navItem navHover"  >HOME</Link></Nav.Link>
                                 <Nav.Link href="#shop-wines" className="navItem">DISCOVER</Nav.Link>
                                 <Nav.Link href="#testimonial" className="navItem">TESTIMONIALS</Nav.Link>
-                                <div className="nav-div" onClick={Login} style={{ paddingLeft: 10, marginTop: 10 }}><a href=""  className="ank_border text-white"  >LOG IN</a></div>
-                                <div className="nav-div1" onClick={(e) => onSignUp(e)} style={{ marginTop: 10 }} ><a href="" className="ank_border_bg text-white">SIGN UP</a></div>
+                                {!localStorage.getItem('UserId') &&
+                                    <>
+                                    <div className="nav-div" onClick={Login} style={{paddingLeft: 10, marginTop: 10}}><a
+                                    href="" className="ank_border text-white">LOG IN</a></div>
+                                    <div className="nav-div1" onClick={(e) => onSignUp(e)} style={{marginTop: 10}} ><a href="" className="ank_border_bg text-white">SIGN UP</a></div>
+                                    </>
+                                }
+                                { localStorage.getItem('UserId') &&
+                                    <div className="nav-div1" onClick={(e) => logout()} style={{marginTop: 10}} ><a href="" className="ank_border_bg text-white">LOG OUT</a></div>
+                                }
                             </Nav>
                         </Navbar.Collapse>
                     </Navbar>
