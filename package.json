@@ -1,0 +1,73 @@
+{
+  "name": "first-app",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "http://localhost:8080",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.34",
+    "@fortawesome/free-solid-svg-icons": "^5.15.2",
+    "@fortawesome/react-fontawesome": "^0.1.14",
+    "antd": "^4.11.2",
+    "axios": "^0.20.0",
+    "bootstrap": "^4.6.0",
+    "cra-template": "1.0.3",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1",
+    "react": "^16.13.1",
+    "react-bootstrap": "^1.4.3",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.1",
+    "react-toastify": "^7.0.0",
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "cron": "^1.8.2",
+    "express": "^4.16.3",
+    "express-jwt": "^5.3.1",
+    "google-play-scraper": "^8.0.2",
+    "jsonwebtoken": "^8.0.0",
+    "md5": "^2.2.1",
+    "metascraper": "^5.16.9",
+    "metascraper-author": "^5.16.9",
+    "metascraper-clearbit": "^5.7.17",
+    "metascraper-date": "^5.7.17",
+    "metascraper-description": "^5.7.17",
+    "metascraper-image": "^5.7.17",
+    "metascraper-logo": "^5.7.17",
+    "metascraper-publisher": "^5.7.17",
+    "metascraper-title": "^5.7.17",
+    "metascraper-url": "^5.7.17",
+    "mongodb": "^3.6.3",
+    "mongoose": "^5.7.5",
+    "nodemailer": "^6.4.17",
+    "nodemon": "^2.0.6",
+    "save": "^2.3.0",
+    "unfluff": "^3.2.0",
+    "winston": "^2.3.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "start-server": "node server/startindex.js",
+    "start-server:prod": "NODE_ENV=production node server/startindex.js",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
