@@ -49,7 +49,7 @@
     "serve": "^11.3.2"
   },
   "scripts": {
-    "start-client": "serve -s build",
+    "start-client": "serve -s build && cd server && node startindex.js",
     "build": "react-scripts build && (cd build && npm install)",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
