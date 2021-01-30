@@ -45,10 +45,11 @@
     "nodemon": "^2.0.6",
     "save": "^2.3.0",
     "unfluff": "^3.2.0",
-    "winston": "^2.3.1"
+    "winston": "^2.3.1",
+    "serve": "^11.3.2"
   },
   "scripts": {
-    "start-client": "react-scripts start",
+    "start-client": "serve -s build",
     "build": "react-scripts build && (cd build && npm install)",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
