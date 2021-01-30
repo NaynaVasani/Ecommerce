@@ -156,8 +156,8 @@ const Header = ({isLogin, hideLogin}) => {
                 </div>
             </div> */}
             <div className="header_blacvk">
-                <div className="container ">
-                    <Navbar collapseOnSelect expand="lg" color="black" variant="dark">
+                <div className="container">
+                    <Navbar className="position-relative" collapseOnSelect expand="lg" color="black" variant="dark">
                         <a href="#"  className="navbar-brand "><Link to='/' style={{ color: "white"}}>OTTIMO VINO</Link></a>
                         <li className="cart-ca" onClick={() => { history.push({ pathname: "/cart" }) }}><a href="#" style={{ fontSize: 25 }}><Badge style={{ backgroundColor: '#b0976d' }} count={count}><i className="icon-hed-fas m-0 fa fa-shopping-cart" ></i></Badge></a></li>
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />

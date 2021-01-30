@@ -52,12 +52,13 @@
     "eslint-config-fortech": "^2.0.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "start-server": "node server/startindex.js",
-    "start-server:prod": "NODE_ENV=production node server/startindex.js",
+    "start-client": "react-scripts start",
+    "build": "react-scripts build && (cd build && yarn install)",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "start": "cd server && yarn start",
+    "start-server": "node server/startindex.js",
+    "start-server:prod": "NODE_ENV=production node server/startindex.js"
   },
   "eslintConfig": {
     "extends": "react-app"
