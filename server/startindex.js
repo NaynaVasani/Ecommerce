@@ -9,7 +9,7 @@ const cors =  require('cors');
 
 
 const app = express( );
-const port = process.env.PORT || config.port;
+const port = process.env.API_PORT || config.port;
 const ENV = process.env.NODE_ENV || config.env;
 
 app.set( "env", ENV );
